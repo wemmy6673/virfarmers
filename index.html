@@ -18,7 +18,7 @@
     <div class="fixed top-0 bottom-0 left-0 right-0 z-40 opacity-40 hidden min-h-screen w-full bg-black md:hidden" id="overlay"></div>
  
     <div class="flex flex-row">
-        <div class="bg-gradient-to-r from-violet-500 to-fuchsia-500 hidden md:flex md:w-1/4">
+        <div class="bg-gradient-to-r from-violet-500 fixed min-h-screen z-50 top-0 left-0 bottom-0 to-fuchsia-500 hidden md:flex md:w-1/4 overflow-y-auto pb-32 max-h-screen">
             <div class="flex flex-col py-20 text-white space-y-20">
                 <h1 class="font-bold mx-auto lg:mx-0 lg:ml-36">Virfars</h1>
                 <div class="flex flex-col space-y-8 mx-auto lg:mx-0 lg:ml-28">
@@ -80,8 +80,9 @@
             class="bi bi-x text-white text-4xl absolute top-0 right-2 cursor-pointer"
             id="cancel"
           ></i>
-                <h1 class="font-bold mx-auto lg:mx-0 lg:ml-36">Virfars</h1>
-                <div class="flex flex-col space-y-8 mx-auto lg:mx-0 lg:ml-28 ">
+             <div class="pl-16 space-y-6">
+                <h1 class="font-bold">Virfars</h1>
+                <div class="flex flex-col space-y-8 md:mx-0 ">
                     <div class="flex flex-row space-x-3">
                         <i class="bi bi-house-door-fill"></i>
                         <a href="#"><p>Home</p></a>
@@ -104,7 +105,7 @@
                     </div>
 
                 </div>
-                <div class="flex flex-col space-y-8 mx-auto lg:mx-0 lg:ml-28">
+                <div class="flex flex-col space-y-8 lg:mx-0 lg:ml-28">
                     <div class="flex flex-row space-x-3">
                         <i class="bi bi-person-fill"></i>
                         <a href="#"><p>Profile</p></a>
@@ -125,11 +126,12 @@
                     
 
                 </div>
-                <div class="flex flex-row space-x-4 mx-auto ml-10 lg:mx-16">
+                <div class="flex flex-row space-x-4 lg:mx-16">
                         <img src="images/avatar.jpg" alt="" class="rounded-full" height="100" width="100">
                         <p class="text-white pt-6 font-bold">Segun Coker</p>
 
                     </div>
+                </div>
 
             </div>
 
@@ -137,7 +139,7 @@
 
 
 
-        <div class="bg-white w-full md:w-3/4 z-10 static">
+        <div class="bg-white w-full md:w-[75%] z-10  md:ml-[25%]">
             <div class="flex flex-col">
                 <div class="flex flex-row justify-between items-center bg-white py-6 shadow-md">
                     <h1 class="text-black font-bold px-6 hidden md:flex">Home</h1>
@@ -196,7 +198,7 @@
 
             <h1 class="pt-10 mt-8 md:mt-0 text-2xl font-bold md:mx-0">My Investments</h1>
 
-            <div class="flex flex-col md:flex-row pt-10 items-center space-y-6 md:space-y-0 md:space-x-4">
+            <div class="flex flex-col md:flex-row pt-10 items-center space-y-6 md:space-y-0 md:space-x-4 pb-10">
                 <div class="flex flex-col md:w-1/4">
                     <img src="images/maize.jpg" alt="" class="rounded-t-lg shadow-lg">
                     <div class="flex flex-col bg-white rounded-b-md shadow-lg">
