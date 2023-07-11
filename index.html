@@ -17,7 +17,7 @@
 </head>
 <body>
     <div class="fixed top-0 bottom-0 left-0 right-0 z-40 opacity-40 hidden min-h-screen w-full bg-black md:hidden" id="overlay"></div>
- 
+ <!-- left sidebar desktop view -->
     <div class="flex flex-row">
         <div class="bg-gradient-to-r from-green-600 to-green-400 fixed min-h-screen z-50 top-0 left-0 bottom-0  hidden md:flex md:w-1/4 overflow-y-auto pb-32 max-h-screen">
             <div class="flex flex-col py-20 text-white space-y-8">
@@ -75,6 +75,11 @@
             </div>
 
         </div>
+        <!-- Sidebar desktop view ends -->
+
+
+
+        <!-- Sidebar mobile view -->
            <div class="bg-green-600 hidden flex z-50 md:hidden fixed min-h-full overflow-y-auto w-3/4" id="container" >
             <div class="flex flex-col py-16 text-white space-y-20 pb-10">
                 <i
@@ -137,6 +142,7 @@
             </div>
 
         </div>
+        <!-- Sidebar mobile view ends -->
 
 
 
@@ -200,7 +206,9 @@
 
             
 
-            <h1 class="pt-10 mt-8 md:mt-0 text-2xl font-bold md:mx-0" data-aos="fade-up" data-aos-duration="1500">My Investments</h1>
+            <h1 class="pt-10 mt-8 md:mt-0 text-2xl font-bold md:mx-0" data-aos="fade-up" data-aos-duration="1500">My <span class="text-green-600">Investments</span></h1>
+            
+            <!-- Investment cards -->
 
             <div class="flex flex-col md:flex-row pt-10 items-center space-y-6 md:space-y-0 md:space-x-4 pb-10" data-aos="fade-up" data-aos-duration="1500">
                 <div class="flex flex-col md:w-1/4"data-aos="fade-up" data-aos-duration="1500">
@@ -272,6 +280,10 @@
 
 
             </div>
+
+            <!-- Investment cards end  -->
+
+
             <!-- Order -->
         <div class="flex flex-col pt-10 overflow-x-auto">
             <div class="flex flex-row justify-between"data-aos="fade-up" data-aos-duration="1500">
@@ -318,7 +330,7 @@
         </div>
 
 
-        <div class="flex flex-col pt-20 md:pt-20 space-y-6">
+        <div class="flex flex-col pt-20 md:pt-20 space-y-6 pb-20">
             <h1 class="text-2xl font-bold text-center">Payment Methods</h1>
 
             <div class="flex flex-col space-y-8 md:flex-row items-center justify-between" data-aos="fade-up" data-aos-duration="1500">
@@ -330,6 +342,59 @@
 
         </div>
         </div>
+
+        <!-- Footer -->
+        <div class="bg-gray-600 text-white pt-20 pb-6">
+            <div class="flex flex-col space-y-6 md:space-y-0  md:space-x-10 md:flex-row px-6 justify-between">
+                <div class="flex flex-col space-y-4 md:space-y-6 text-center">
+                    <h1 class="text-2xl font-bold">Virfarmers</h1>
+                    <h1 class="text-sm">All you need to trade farm products</h1>
+
+                </div>
+                <div class="flex flex-col space-y-4 md:space-y-6 text-center">
+                    <h1 class="text-2xl font-bold">Company</h1>
+                    <h1 class="text-sm">About Us</h1>
+                    <h1 class="text-sm">Blog</h1>
+                    <h1 class="text-sm">FAQs</h1>
+
+                </div>
+                <div class="flex flex-col space-y-4 md:space-y-6 text-center">
+                    <h1 class="text-2xl font-bold">Products</h1>
+                    <h1 class="text-sm">Fiat payments</h1>
+                    <h1 class="text-sm">Bills payment</h1>
+                    <h1 class="text-sm">Virtual cards</h1>
+                    <h1 class="text-sm">Payment links</h1>
+                    
+
+                </div>
+                <div class="flex flex-col space-y-4 md:space-y-6 text-center">
+                    <h1 class="text-2xl font-bold">Talk to us</h1>
+                    <h1 class="text-sm">Twitter</h1>
+                    <h1 class="text-sm">Instagram</h1>
+                    <h1 class="text-sm">Telegram</h1>
+                    <h1 class="text-sm">E-mail</h1>
+
+
+                    
+
+                </div>
+                <div class="flex flex-col space-y-4 md:space-y-6 text-center">
+                    <h1 class="text-2xl font-bold">Legal</h1>
+                    <h1 class="text-sm">Terms of Use</h1>
+                    <h1 class="text-sm">Privacy policy</h1>
+                    <h1 class="text-sm">Disclaimer</h1>
+
+
+
+
+                </div>
+
+            </div>
+            <p class="text-center text-xs pt-6 md:pt-10">Virfarmers</p>
+            <p class="text-center text-xs pb-6">@All rights reserved</p>
+
+        </div>
+        <!-- Footer ends -->
         
         </div>
         
