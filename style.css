@@ -1,34 +1,57 @@
-@media(max-width:1520px) {
-  .left-svg {
-      display: none;
-  }
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;500&display=swap');
+
+
+
+* {
+  font-family: 'Outfit', sans-serif;
 }
 
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  margin: 50% 50%;
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #0fbd09;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
 
-/* small css for the mobile nav close */
-#nav-mobile-btn.close span:first-child {
-  transform: rotate(45deg);
-  top: 4px;
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
   position: relative;
-  background: #a0aec0;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
 }
 
-#nav-mobile-btn.close span:nth-child(2) {
-  transform: rotate(-45deg);
-  margin-top: 0px;
-  background: #a0aec0;
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
 }
-.modal {
-  transition: opacity 0.25s ease;
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
 }
-body.modal-active {
-  overflow-x: hidden;
-  overflow-y: visible !important;
-}
-body{
-  font-family: 'Maven Pro', sans-serif;
-}
-footer{
-  font-family: 'Maven Pro', sans-serif;
-  
+
+#myDiv {
+  display: none;
+  text-align: center;
 }

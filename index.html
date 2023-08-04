@@ -15,10 +15,11 @@
 
     <title>Document</title>
 </head>
-<body>
+<body onload="myFunction()">
+
     <div class="fixed top-0 bottom-0 left-0 right-0 z-40 opacity-40 hidden min-h-screen w-full bg-black md:hidden" id="overlay"></div>
  <!-- left sidebar desktop view -->
-    <div class="flex flex-row">
+    
         <div class="bg-gradient-to-r from-green-600 to-green-400 fixed min-h-screen z-50 top-0 left-0 bottom-0  hidden md:flex md:w-1/4 overflow-y-auto pb-32 max-h-screen">
             <div class="flex flex-col py-20 text-white space-y-8">
                 <h1 class="font-bold lg:mx-0 lg:ml-28 mx-auto text-3xl">Virfars</h1>
@@ -387,8 +388,95 @@
         </div>
  -->
 
+ <!-- Vegetation index -->
+        <div class="flex flex-col pt-20 pb-20">
+            <div class="flex flex-row justify-between pb-5">
+                <h1 class="font-bold">Vegetation index</h1>
+                <div class="p-4 bg-slate-50 rounded-xl">
+                    <select name="" id="" class="bg-slate-50 text-black">
+                        <option value="0">NDV1</option>
+                        <option value="1">Summer</option>
+                        <option value="2">Winter</option>
+                        <option value="3">Autumn</option>
+                        <option value="4">Spring</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="flex flex-col space-y-4 md:hidden">
+            <div class="flex flex-row space-x-4">
+                <div class="bg-lime-200 rounded-2xl flex flex-col space-y-2 p-6">
+                    <h1 class="text-3xl">🌿</h1>
+                    <h1 class="text-2xl font-bold">40%</h1>
+                    <h1 class="">Of reference value</h1>
+                    <h1 class="text-gray-600">Plant's health</h1>
+
+                </div>
+                <div class="bg-slate-50 rounded-2xl flex flex-col space-y-2 p-6">
+                    <h1 class="text-3xl">🌧️</h1>
+                    <h1 class="text-2xl font-bold">72%</h1>
+                    <h1 class="">Of reference value</h1>
+                    <h1 class="text-gray-600">Water depth</h1>
+
+                </div>
+
+            </div>
+            <div class="flex flex-row space-x-4">
+                <div class="bg-slate-50 rounded-2xl flex flex-col space-y-2 p-6">
+                    <h1 class="text-3xl">🌤️</h1>
+                    <h1 class="text-2xl font-bold">53%</h1>
+                    <h1 class="">Of reference value</h1>
+                    <h1 class="text-gray-600">Photosynthesis</h1>
+
+                </div>
+                <div class="bg-amber-400 rounded-2xl flex flex-col space-y-2 p-6">
+                    <h1 class="text-3xl">🚜</h1>
+                    <h1 class="text-2xl font-bold">28%</h1>
+                    <h1 class="">Of reference value</h1>
+                    <h1 class="text-gray-600">Soil respiration</h1>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="hidden md:flex md:flex-row space-x-4">
+            <div class="bg-lime-200 rounded-2xl flex flex-col space-y-2 p-6 w-1/4">
+                <h1 class="text-3xl">🌿</h1>
+                <h1 class="text-2xl font-bold">40%</h1>
+                <h1 class="">Of reference value</h1>
+                <h1 class="text-gray-600">Plant's health</h1>
+
+            </div>
+            <div class="bg-slate-50 rounded-2xl flex flex-col space-y-2 p-6 w-1/4">
+                <h1 class="text-3xl">🌧️</h1>
+                <h1 class="text-2xl font-bold">72%</h1>
+                <h1 class="">Of reference value</h1>
+                <h1 class="text-gray-600">Water depth</h1>
+
+            </div>
+            <div class="bg-slate-50 rounded-2xl flex flex-col space-y-2 p-6 w-1/4">
+                <h1 class="text-3xl">🌤️</h1>
+                <h1 class="text-2xl font-bold">53%</h1>
+                <h1 class="">Of reference value</h1>
+                <h1 class="text-gray-600">Photosynthesis</h1>
+
+            </div>
+            <div class="bg-amber-400 rounded-2xl flex flex-col space-y-2 p-6 w-1/4">
+                <h1 class="text-3xl">🚜</h1>
+                <h1 class="text-2xl font-bold">28%</h1>
+                <h1 class="">Of reference value</h1>
+                <h1 class="text-gray-600">Soil respiration</h1>
+
+            </div>
+            
+
+        </div>
+        <!-- Vgetation index ends -->
+
         <div class="flex flex-col pt-20 md:pt-20 space-y-6 pb-20">
-            <h1 class="text-2xl font-bold text-center">Payment Methods</h1>
+            <h1 class="text-2xl font-bold text-center md:text-left">Payment Methods</h1>
 
             <div class="flex flex-col space-y-8 md:flex-row items-center justify-between" data-aos="fade-up" data-aos-duration="1500">
                 <img src="images/paypal.png" alt="" width="200" height="200">
@@ -398,7 +486,11 @@
             </div>
 
         </div>
+        
         </div>
+
+
+        
 
         <!-- Footer -->
         <div class="bg-gray-600 text-white pt-20 pb-6">
@@ -508,6 +600,18 @@
         });
 
 
+
+
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 3000);
+            }
+
+            function showPage() {
+                document.getElementById("loader").style.display = "none";
+                document.getElementById("myDiv").style.display = "block";
+                }
     </script>
     
 </body>
